@@ -19,9 +19,9 @@ class sshd {
   				"/etc/ssh/sshd_config": 
   					source => ["puppet:///modules/sshd/sshd_config"],
   					notify => Service['sshd'],
-  					mode => "444",
-  					owner => "root",
-  					group => "root",
+  					owner => root,
+            group => root,
+            mode => 644,
   					require => Package['openssh-server'],
   		}      
 
