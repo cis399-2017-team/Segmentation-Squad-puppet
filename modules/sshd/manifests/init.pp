@@ -17,7 +17,7 @@ class sshd {
         
   		file {
   				"/etc/ssh/sshd_config": 
-  					source => ["puppet:///modules/sshd/files/sshd_config"],
+  					source => ["puppet:///modules/sshd/sshd_config"],
   					notify => Service['sshd'],
   					mode => "444",
   					owner => "root",
@@ -33,7 +33,7 @@ class sshd {
         }
 
         ssh_authorized_key {
-        	"junck": 
+        	"junck-key": 
         	user => "ubuntu",
         	type => "ssh-rsa",
         	key => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCjfk9PZxnJkmtLqICp/Lj7GrAiqnxAsTKcUV7ATJFY9DwjIJdpXUsD+Yzqc/C32tCdXvmU54qmORYzYb9tmzHVfWEQeTg3mQzBwDmOiwU9MksaQwoGZNMuX9tkFagtAKIsCbDs7te6NJB7k5RwsZwXF70RtxXOgOGx76fizZ+HI/b4Ft0YYb9sDwvBbww7dj5lJQWOMjxl077BUNTMAeEFMKggRBFyjTHGOp8yKhdcEwbZvtIx3Gt46mA3YmVkJHdXiClpdaz/gAACPRlXRiKm9Q494e1yJZUZ8FleQDh2VX9ODiniT7usv1lmaxBH/Ugc7Y99jSWF4Mkoi2NTWbqz",
