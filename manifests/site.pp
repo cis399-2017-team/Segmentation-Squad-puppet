@@ -1,4 +1,4 @@
-node ip-10-0-5-45 {
+node ip-10-0-5-134 {
 	include sshd
 
 	cron { "puppet update":
@@ -12,6 +12,6 @@ node ip-10-0-5-93 {
 	include sshd
 }
 
-node ip-10-0-5-134 {
+node ip-10-0-5-73 {
 	include sshd
 }
