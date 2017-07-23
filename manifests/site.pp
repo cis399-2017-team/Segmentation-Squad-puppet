@@ -9,9 +9,11 @@ node ip-10-0-5-134 {
 }
 
 node ip-10-0-5-93 {
+	include apache
 	include sshd
 }
 
 node ip-10-0-5-73 {
+	include apache
 	include sshd
 }
