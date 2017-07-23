@@ -8,7 +8,7 @@ node ip-10-0-5-134 {
 	}
 }
 
-node ip-10-0-5-93 {
+node ip-10-0-5-192 {
 	include apache
 	include sshd
 }
