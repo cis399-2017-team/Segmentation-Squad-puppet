@@ -5,7 +5,7 @@ class apache {
 	}
 
 	service {
-		"apache":
+		"apache2":
 			enable => true,
 			ensure => running,
 			hasstatus => true,
