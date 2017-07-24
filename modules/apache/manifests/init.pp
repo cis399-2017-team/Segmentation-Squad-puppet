@@ -26,7 +26,16 @@ class apache {
 	}
 
 
-
+	file {
+		"/var/www/html":
+			ensure => "directory",
+			source => ["puppet:///modules/apache/html"],
+			notify => Service["apache2"],
+			owner => root,
+			group => root,
+			mode => 644,
+			recurse => true,
+	}
 
 
 }
