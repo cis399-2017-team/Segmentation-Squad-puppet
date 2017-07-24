@@ -18,7 +18,7 @@ class apache {
 	file {
 		"/etc/apache2/apache2.conf":
 			source => ["puppet:///modules/apache/apache2.conf"],
-			notify => Service["apache"]
+			notify => Service["apache"],
 			owner => root,
 			group => root,
 			mode => 644,
