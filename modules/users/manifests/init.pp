@@ -1,12 +1,12 @@
 class users {
-	group { '399':
-		name => '399',
+	group { 'cis':
+		name => 'cis',
 		ensure => present,
 	}
 	user { 'stevev':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/stevev',
 		managehome => true,
 	}
@@ -18,7 +18,7 @@ class users {
 	user { 'loganr':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/loganr',
 		managehome => true,
 	}
@@ -30,7 +30,7 @@ class users {
 	user { 'nsato':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/nsato',
 		managehome => true,
 	}
@@ -42,7 +42,7 @@ class users {
 	user { 'mheb':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/mheb',
 		managehome => true,
 	}
@@ -54,7 +54,7 @@ class users {
 	user { 'lcs':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/lcs',
 		managehome => true,
 	}
@@ -66,7 +66,7 @@ class users {
 	user { 'cplachno':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/cplachno',
 		managehome => true,
 	}
@@ -78,7 +78,7 @@ class users {
 	user { 'aalheid4':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/aalheid4',
 		managehome => true,
 	}
@@ -90,7 +90,7 @@ class users {
 	user { 'almensha':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/almensha',
 		managehome => true,
 	}
@@ -102,7 +102,7 @@ class users {
 	user { 'cnf':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/cnf',
 		managehome => true,
 	}
@@ -114,7 +114,7 @@ class users {
 	user { 'talabap':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/talabap',
 		managehome => true,
 	}
@@ -126,7 +126,7 @@ class users {
 	user { 'jsheabia':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/jsheabia',
 		managehome => true,
 	}
@@ -138,7 +138,7 @@ class users {
 	user { 'davish':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/davish',
 		managehome => true,
 	}
@@ -150,7 +150,7 @@ class users {
 	user { 'jemin':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/jemin',
 		managehome => true,
 	}
@@ -162,7 +162,7 @@ class users {
 	user { 'cconklin':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/cconklin',
 		managehome => true,
 	}
@@ -174,7 +174,7 @@ class users {
 	user { 'nboyd':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/nboyd',
 		managehome => true,
 	}
@@ -186,7 +186,7 @@ class users {
 	user { 'kaelas':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/kaelas',
 		managehome => true,
 	}
@@ -198,7 +198,7 @@ class users {
 	user { 'jdolan':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/jdolan',
 		managehome => true,
 	}
@@ -210,7 +210,7 @@ class users {
 	user { 'hjo':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/hjo',
 		managehome => true,
 	}
@@ -222,7 +222,7 @@ class users {
 	user { 'menif':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/menif',
 		managehome => true,
 	}
@@ -234,7 +234,7 @@ class users {
 	user { 'stevep20':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/stevep20',
 		managehome => true,
 	}
@@ -247,7 +247,7 @@ class users {
 	user { 'slynch':
 		ensure => present,
 		shell => '/bin/bash',
-		groups => ['399'],
+		groups => ['cis'],
 		home => '/home/slynch',
 		managehome => true,
 	}
