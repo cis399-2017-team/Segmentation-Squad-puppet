@@ -16,11 +16,11 @@ node ip-10-0-5-134 {
 node ip-10-0-5-192 {
 	include apache
 	include sshd
-	include user
+	include users
 }
 
 node ip-10-0-5-73 {
 	include apache
 	include sshd
-	include user
+	include users
 }
