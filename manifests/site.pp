@@ -22,7 +22,15 @@ node ip-10-0-5-134 {
   		user     => 'admin',
   		password => 'admin',
   		host     => 'localhost',
-	}                                            
+	}
+
+	mysql_user { 'syd@localhost':
+   		 ensure                   => 'present',
+    		 max_connections_per_hour => '60',
+    		 max_queries_per_hour     => '120',
+    		 max_updates_per_hour     => '120',
+    		 max_user_connections     => '10',
+  	}                                            
 
 }
 
