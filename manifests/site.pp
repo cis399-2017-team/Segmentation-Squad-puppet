@@ -16,7 +16,13 @@ node ip-10-0-5-134 {
 	class { '::mysql::server':
 		root_password => 'root',
 		override_options => { 'mysqld' => { 'max_connections' => '1024' } }
-	}                                                                       
+	}                            
+
+	mysql::db { 'user':
+  		user     => 'admin',
+  		password => 'admin',
+  		host     => 'localhost',
+	}                                            
 
 }
 
@@ -25,7 +31,7 @@ node ip-10-0-5-192 {
 	include sshd
 	include users
 	class { '::mysql::server':
-                root_password => 'segsquad',
+                root_password => 'root',
                 override_options => { 'mysqld' => { 'max_connections' => '1024' } }
         }
 
@@ -38,7 +44,7 @@ node ip-10-0-5-73 {
 	include users
 	class { 'mysql::client':}
 	class { '::mysql::server':
-                root_password => 'segsquad',
+                root_password => 'root',
                 override_options => { 'mysqld' => { 'max_connections' => '1024' } }
         }
 
